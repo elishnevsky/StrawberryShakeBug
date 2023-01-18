@@ -1,0 +1,18 @@
+query GetAssets {
+    assets {
+        nodes {
+            name
+        }
+    }
+}
+
+query GetAssetsWithLastPrice {
+    assets {
+        nodes {
+            name
+            price {
+                lastPrice
+            }
+        }
+    }
+}

@@ -1,0 +1,46 @@
+﻿@page "/"
+
+<PageTitle>Index</PageTitle>
+
+<h1>Hello, world!</h1>
+
+Welcome to your new app.
+
+<SurveyPrompt Title="How is Blazor working for you?" />
+
+<div style="display: flex;">
+    <div style="flex: 1;">
+        <h2>Asset names only</h2>
+        <UseGetAssets>
+            <LoadingContent>
+                Loading...
+            </LoadingContent>
+            <ChildContent>
+                @if (context.Assets?.Nodes is not null)
+                {
+                    @foreach (var asset in context.Assets.Nodes)
+                    {
+                        <p>@asset.Name</p>
+                    }
+                }
+            </ChildContent>
+        </UseGetAssets>
+    </div>
+    <div style="flex: 1;">
+        <h2>Asset names with last price</h2>
+        <UseGetAssetsWithLastPrice>
+            <LoadingContent>
+                Loading...
+            </LoadingContent>
+            <ChildContent>
+                @if (context.Assets?.Nodes is not null)
+                {
+                    @foreach (var asset in context.Assets.Nodes)
+                    {
+                        <p>@asset.Name ($@asset.Price.LastPrice)</p>
+                    }
+                }
+            </ChildContent>
+        </UseGetAssetsWithLastPrice>
+    </div>
+</div>
