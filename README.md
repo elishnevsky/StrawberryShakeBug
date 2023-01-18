@@ -12,7 +12,7 @@ dotnet run
 3. Return to Home
 
 ### Epected result
-Both lists should should load and display the data as in step 1
+Both lists should load and display the data as in step 1
 
 ### Actual result
-Only 'Asset names with last price' display the data, the other list is stuck on 'Loading...'
+Only 'Asset names with last price' list displays the data, the other list is stuck on 'Loading...'
