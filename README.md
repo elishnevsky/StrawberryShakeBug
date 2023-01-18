@@ -11,7 +11,7 @@ dotnet run
 
 3. Return to Home
 
-### Epected result
+### Expected result
 Both lists should load and display the data as in step 1
 
 ### Actual result
