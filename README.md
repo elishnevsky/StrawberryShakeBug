@@ -5,7 +5,7 @@ dotnet restore
 dotnet run
 ```
 
-1. 'Assets names only' and 'Asset names with last price' lists are rendered side-by-side, both have data
+1. 'Asset names only' and 'Asset names with last price' lists are rendered side-by-side, both have data
 
 2. Navigate to any other page
 
